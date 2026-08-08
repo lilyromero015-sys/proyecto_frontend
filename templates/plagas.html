@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGINA DE PLAGAS</title>
+    <link rel="stylesheet" href="static/estilo.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">🌱 <span>SmartCafe</span></div>
+        <nav class="nav-links">
+            <a href="#">Plagas</a>
+            <a href="#">Enfermedades</a>
+            <a href="#">Tratamientos</a>
+            <a href="#">login</a>
+        </nav>
+        <div class="nav-right">
+            <input type="text" class="search-input" placeholder="Buscar...">
+            <span class="icon">🔔</span>
+            <span class="icon avatar">👤</span>
+        </div>
+    </header>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="contenido">
+
+        <section class="encabezado">
+            <h1>Catálogo de Fitopatología</h1>
+            <p>Base de datos especializada para la identificación y gestión temprana de amenazas en cultivos de café
+                arábica y robusta.</p>
+        </section>
+
+        <!-- BUSCADOR Y FILTROS -->
+        <section class="buscador-filtros">
+            <input type="text" class="buscador" placeholder="🔍 Buscar por nombre científico o común...">
+            <div class="filtros">
+                <button class="filtro activo">Todas las categorías ▾</button>
+                <button class="filtro">🐛 Insectos</button>
+                <button class="filtro">🍄 Hongos</button>
+                <button class="filtro">🌿 Deficiencias</button>
+                <button class="filtro mas-filtros">⚙ Más filtros</button>
+            </div>
+        </section>
+
+        <!-- GRID DE TARJETAS -->
+        <section class="grid-plagas">
+
+            <article class="tarjeta">
+                <div class="tarjeta-img">
+                    <img src="{{ url_for('static', filename='img/broca.jpg') }}" alt="Broca del Café">
+                    <span class="riesgo riesgo-critico">RIESGO CRÍTICO</span>
+                </div>
+                <div class="tarjeta-info">
+                    <h3>Broca del Café</h3>
+                    <p class="nombre-cientifico">Hypothenemus hampei</p>
+                    <p class="descripcion">Pequeño insecto barrenador que ataca directamente el fruto, reduciendo
+                        drásticamente la calidad y el rendimiento.</p>
+                    <div class="tarjeta-footer">
+                        <span class="actualizado">🕒 Actualizado: Mayo 2024</span>
+                        <button class="btn-detalles">Ver Detalles</button>
+                    </div>
+                </div>
+            </article>
+            <article class="tarjeta">
+                <div class="tarjeta-img">
+                    <img src="{{ url_for('static', filename='img/roya.jpg') }}" alt="Roya del Cafeto">
+                    <span class="riesgo riesgo-muy-alto">RIESGO MUY ALTO</span>
+                </div>
+                <div class="tarjeta-info">
+                    <h3>Roya del Cafeto</h3>
+                    <p class="nombre-cientifico">Hemileia vastatrix</p>
+                    <p class="descripcion">Hongo que produce manchas anaranjadas en las hojas, provocando la caída
+                        prematura y debilitamiento del árbol.</p>
+                    <div class="tarjeta-footer">
+                        <span class="actualizado">🕒 Actualizado: Abril 2024</span>
+                        <button class="btn-detalles">Ver Detalles</button>
+                    </div>
+                </div>
+            </article>
+            <article class="tarjeta">
+                <div class="tarjeta-img">
+                    <img src="{{ url_for('static', filename='img/minador.jpg') }}" alt="Minador de la Hoja">
+                    <span class="riesgo riesgo-medio">RIESGO MEDIO</span>
+                </div>
+                <div class="tarjeta-info">
+                    <h3>Minador de la Hoja</h3>
+                    <p class="nombre-cientifico">Leucoptera coffeella</p>
+                    <p class="descripcion">Micro-lepidóptero cuyas larvas crean túneles en las hojas, reduciendo el área
+                        de fotosíntesis de la planta.</p>
+                    <div class="tarjeta-footer">
+                        <span class="actualizado">🕒 Actualizado: Mar 2024</span>
+                        <button class="btn-detalles">Ver Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <div class="tarjeta-img">
+                    <img src="{{ url_for('static', filename='img/antracnosis.jpg') }}" alt="Antracnosis">
+                    <span class="riesgo riesgo-alto">RIESGO ALTO</span>
+                </div>
+                <div class="tarjeta-info">
+                    <h3>Antracnosis</h3>
+                    <p class="nombre-cientifico">Colletotrichum spp.</p>
+                    <p class="descripcion">Enfermedad fúngica que causa lesiones necróticas en frutos, hojas y ramas
+                        terminales, afectando la cosecha.</p>
+                    <div class="tarjeta-footer">
+                        <span class="actualizado">🕒 Actualizado: Ene 2024</span>
+                        <button class="btn-detalles">Ver Detalles</button>
+                    </div>
+                </div>
+            </article>
+            <article class="tarjeta">
+                <div class="tarjeta-img">
+                    <img src="{{ url_for('static', filename='img/mancha-hierro.jpg') }}" alt="Mancha de Hierro">
+                    <span class="riesgo riesgo-medio">RIESGO MEDIO</span>
+                </div>
+                <div class="tarjeta-info">
+                    <h3>Mancha de Hierro</h3>
+                    <p class="nombre-cientifico">Cercospora coffeicola</p>
+                    <p class="descripcion">Genera manchas circulares de color pardo-rojizo. Común en semilleros y
+                        cafetales con deficiente nutrición.</p>
+                    <div class="tarjeta-footer">
+                        <span class="actualizado">🕒 Actualizado: Feb 2024</span>
+                        <button class="btn-detalles">Ver Detalles</button>
+                    </div>
+                </div>
+            </article>
+            <article class="tarjeta">
+                <div class="tarjeta-img">
+                    <img src="{{ url_for('static', filename='img/deficiencia-n.jpg') }}" alt="Deficiencia de Nitrógeno">
+                    <span class="riesgo riesgo-nutricional">NUTRICIONAL</span>
+                </div>
+                <div class="tarjeta-info">
+                    <h3>Deficiencia de Nitrógeno</h3>
+                    <p class="nombre-cientifico">Fisiopatía abiótica</p>
+                    <p class="descripcion">Amarillamiento generalizado de las hojas viejas que se extiende a las
+                        jóvenes, reduciendo el vigor vegetativo.</p>
+                    <div class="tarjeta-footer">
+                        <span class="actualizado">🕒 Actualizado: Dic 2023</span>
+                        <button class="btn-detalles">Ver Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- PAGINACIÓN -->
+        <nav class="paginacion">
+            <button class="pag-btn">‹</button>
+            <button class="pag-btn activo">1</button>
+            <button class="pag-btn">2</button>
+            <button class="pag-btn">3</button>
+            <button class="pag-btn">›</button>
+        </nav>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-plagas">
+        <p>ⓘ Información técnica validada por institutos nacionales de café.</p>
+        <div class="footer-links">
+            <a href="#">⬇ Descargar Catálogo PDF</a>
+            <a href="#">👨‍🌾 Consultar con Agrónomo</a>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/funciones.js') }}"></script>
+
+
+
+
+</body>
+
+</html>
