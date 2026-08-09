@@ -1,0 +1,85 @@
+/*Estas lineas son para reiniciar todo el css y que no tenga configuracion por defecto*/
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*Barra De Navegacion*/
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 73px;
+    padding: 0 44px;
+    border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+/*esto basicamente es para el logo que aparece al lado del nombre del software en la pagina principal*/
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+/*el nombre del software en la parte superior izquierda en la pagina principal*/
+.logo-nombre {
+    text-decoration: none;
+    color: #020202;
+    font-size: 18px;
+    font-weight: 700;
+}
+/*esto es para centrar las 4 opciones de navegacion del menu*/
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 37px;
+}
+/*color y quitar la decoracion a las 4 opciones para que se vea mas bonito*/
+.menu-acciones {
+    color: rgb(87, 87, 87);
+    text-decoration: none;
+}
+/*este es el apartado o el input de busqueda y su configuracion al lado del boton de iniciar sesion*/
+.btn-buscar {
+    width: 238px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 14px;
+    background-color: #ecfdf1;
+    border: 1px solid #a7e9b8;
+    border-radius: 8px;
+}
+/*configurar la tipografia de letra y colores de el input de busqueda */
+.btn-buscar input {
+   background: transparent; 
+   color: rgb(87, 87, 87);  
+   border: none;
+}
+/*este es la configuracion de la lupita que esta dentro del buscador*/
+.btn-buscar span {
+    color: #00c83a;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+/*este es el contenedor para ordenar que el boton de busqueda y el de inicio de sesion queden uo al lado del otro*/ 
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: auto;
+}
+/*este es el boton de inicio de sesion y su configuracion*/
+.btn-login {
+    height: 36px;
+    padding: 9.5px 22px;
+    border: none;
+    border-radius: 7px;
+    background-color: #08c83a;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
