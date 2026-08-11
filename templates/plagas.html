@@ -13,10 +13,10 @@
     <header class="navbar">
         <div class="logo">🌱 <span>SmartCafe</span></div>
         <nav class="nav-links">
-            <a href="#">Plagas</a>
+            <a href="/">Inicio</a>
             <a href="#">Enfermedades</a>
             <a href="#">Tratamientos</a>
-            <a href="#">login</a>
+            <a href="login">login</a>
         </nav>
         <div class="nav-right">
             <input type="text" class="search-input" placeholder="Buscar...">
@@ -50,7 +50,7 @@
 
             <article class="tarjeta">
                 <div class="tarjeta-img">
-                    <img src="{{ url_for('static', filename='img/broca.jpg') }}" alt="Broca del Café">
+                    <img src="{{ url_for('static', filename='imagenes/broca_cafe.webp') }}" alt="Broca del Café">
                     <span class="riesgo riesgo-critico">RIESGO CRÍTICO</span>
                 </div>
                 <div class="tarjeta-info">
@@ -66,7 +66,7 @@
             </article>
             <article class="tarjeta">
                 <div class="tarjeta-img">
-                    <img src="{{ url_for('static', filename='img/roya.jpg') }}" alt="Roya del Cafeto">
+                    <img src="{{ url_for('static', filename='imagenes/royal.jpg') }}" alt="Roya del Cafeto">
                     <span class="riesgo riesgo-muy-alto">RIESGO MUY ALTO</span>
                 </div>
                 <div class="tarjeta-info">
@@ -82,7 +82,7 @@
             </article>
             <article class="tarjeta">
                 <div class="tarjeta-img">
-                    <img src="{{ url_for('static', filename='img/minador.jpg') }}" alt="Minador de la Hoja">
+                    <img src="{{ url_for('static', filename='imagenes/minador.webp') }}" alt="Minador de la Hoja">
                     <span class="riesgo riesgo-medio">RIESGO MEDIO</span>
                 </div>
                 <div class="tarjeta-info">
@@ -99,7 +99,7 @@
 
             <article class="tarjeta">
                 <div class="tarjeta-img">
-                    <img src="{{ url_for('static', filename='img/antracnosis.jpg') }}" alt="Antracnosis">
+                    <img src="{{ url_for('static', filename='imagenes/antraconosis.jpg') }}" alt="Antracnosis">
                     <span class="riesgo riesgo-alto">RIESGO ALTO</span>
                 </div>
                 <div class="tarjeta-info">
@@ -115,7 +115,7 @@
             </article>
             <article class="tarjeta">
                 <div class="tarjeta-img">
-                    <img src="{{ url_for('static', filename='img/mancha-hierro.jpg') }}" alt="Mancha de Hierro">
+                    <img src="{{ url_for('static', filename='imagenes/mancha de hierro.jpg') }}" alt="Mancha de Hierro">
                     <span class="riesgo riesgo-medio">RIESGO MEDIO</span>
                 </div>
                 <div class="tarjeta-info">
@@ -131,7 +131,8 @@
             </article>
             <article class="tarjeta">
                 <div class="tarjeta-img">
-                    <img src="{{ url_for('static', filename='img/deficiencia-n.jpg') }}" alt="Deficiencia de Nitrógeno">
+                    <img src="{{ url_for('static', filename='imagenes/deficiencia de nitrogeno.jpg') }}"
+                        alt="Deficiencia de Nitrógeno">
                     <span class="riesgo riesgo-nutricional">NUTRICIONAL</span>
                 </div>
                 <div class="tarjeta-info">
