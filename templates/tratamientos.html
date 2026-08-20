@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/trata.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">🌱 <span>Guía de Caficultura</span></div>
+        <nav class="nav-links">
+            <a href="/">inicio</a>
+            <a href="plagas">enfermedades</a>
+            <a href="foro">foro</a>
+            <a href="login">iniciar seccion</a>
+        </nav>
+        <a href="#" class="btn-manual">⬇ Manual PDF</a>
+    </header>
+
+    <!-- CONTENIDO -->
+    <main class="contenido">
+
+        <!-- HERO -->
+        <section class="hero-tratamientos">
+            <span class="etiqueta-hero">RECURSOS TÉCNICOS</span>
+            <h1>Manual de Buenas Prácticas Agrícolas</h1>
+            <p>Optimiza tu producción y protege tus cultivos con nuestra guía paso a paso para la prevención y el
+                tratamiento de plagas.</p>
+        </section>
+
+        <!-- TABS -->
+        <nav class="tabs-tratamientos">
+            <button class="tab activo">Prevención</button>
+            <button class="tab">Tratamiento Curativo</button>
+        </nav>
+
+        <!-- SECCIÓN 1: PREVENCIÓN -->
+        <section class="seccion-guia">
+            <div class="seccion-titulo">
+                <div>
+                    <h2>1. Medidas de Prevención</h2>
+                    <p>Acciones proactivas para evitar la aparición de la roya y otras enfermedades.</p>
+                </div>
+                <a href="#" class="link-descarga">📄 Descargar Guía de Prevención</a>
+            </div>
+
+            <div class="grid-pasos">
+                <div class="tarjeta-paso">
+                    <span class="numero-paso">1</span>
+                    <i class="fa-mosaic fa-solid fa-file fa-fade fa-lg" style="color: rgb(99, 230, 190);"></i>
+                    <h3>Monitoreo Semanal</h3>
+                    <p>Inspecciona al menos 20 plantas por lote cada semana. Busca manchas amarillas en el envés de las
+                        hojas bajas.</p>
+                </div>
+
+                <div class="tarjeta-paso">
+                    <span class="numero-paso">2</span>
+                    <i class="fa-mosaic fa-solid fa-scissors fa-fade" style="color: rgb(215, 13, 13);"></i>
+                    <h3>Poda de Ventilación</h3>
+                    <p>Realiza podas selectivas para permitir la entrada de luz y aire. La humedad excesiva favorece la
+                        germinación de esporas.</p>
+                </div>
+
+                <div class="tarjeta-paso">
+                    <span class="numero-paso">3</span>
+                    <i class="fa-mosaic fa-solid fa-droplet fa-flip fa-xl" style="color: rgb(109, 237, 243);"></i>
+                    <h3>Nutrición del Suelo</h3>
+                    <p>Un cafetal bien nutrido es más resistente. Aplica fertilizantes basados en el análisis de suelo
+                        de tu finca.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONSEJO DE EXPERTO -->
+        <section class="consejo-experto">
+            <div class="consejo-texto">
+                <span class="consejo-titulo">💡 Consejo de Experto</span>
+                <p class="consejo-cita">"La prevención es el 80% del éxito. No esperes a ver la primera mancha de roya
+                    para actuar; la limpieza de herramientas y el control de malezas son fundamentales desde el primer
+                    día."</p>
+                <div class="consejo-autor">
+
+                    <i class="fa-sharp fa-solid fa-circle-user" style="color: rgb(99, 230, 190);"></i>
+
+                    <div>
+                        <strong>Ing. Carlos Mendoza</strong>
+                        <p>Asesor Técnico Senior</p>
+                    </div>
+                </div>
+            </div>
+            <div class="consejo-imagen">
+                <img src="static/imagenes/cafe_sano.jpg" alt="Planta de café">
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: TRATAMIENTO -->
+        <section class="seccion-guia">
+            <div class="seccion-titulo">
+                <div>
+                    <h2>2. Tratamiento y Control</h2>
+                    <p>Guía para el manejo de infecciones activas y recuperación de lotes.</p>
+                </div>
+                <a href="#" class="link-descarga">📄 Protocolo de Aspersión PDF</a>
+            </div>
+
+            <div class="lista-pasos">
+                <div class="fila-paso">
+                    <i class="fa-solid fa-wand-magic-sparkles" style="color: rgb(99, 230, 190);"></i <div>
+                    <span class="badge-paso">PASO A</span>
+
+                    <h3>Preparación del Fungicida</h3>
+
+                    <p>Utiliza fungicidas sistémicos o de contacto autorizados. Calibra tu bomba de espalda para
+                        asegurar una cobertura uniforme (aprox. 400ml por planta).</p>
+                </div>
+            </div>
+
+            <div class="fila-paso">
+                <i class="fa-solid fa-bolt" style="color: rgb(99, 230, 190);"></i>
+
+                <div>
+                    <span class="badge-paso">PASO B</span>
+                    <h3>Aplicación Focalizada</h3>
+                    <p>Dirige la boquilla hacia el envés de las hojas, asegurando que el producto cubra las zonas
+                        donde el hongo se desarrolla. Aplica en horas frescas (temprano o tarde).</p>
+                </div>
+            </div>
+
+            <div class="fila-paso">
+                <i class="fa-solid fa-file" style="color: rgb(99, 230, 190);"></i>
+                <div>
+                    <span class="badge-paso">PASO C</span>
+                    <h3>Registro y Seguimiento</h3>
+                    <p>Anota la fecha, el producto y el lote tratado. Verifica la efectividad a los 15 días. Si la
+                        incidencia persiste, consulta con un técnico.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section class="cta-final">
+            <h2>¿Necesitas la guía completa en tu celular?</h2>
+            <p>Descarga nuestro manual offline para consultarlo en el campo sin necesidad de conexión a internet.</p>
+            <div class="cta-botones">
+                <a href="#" class="btn-cta-verde">⬇ Guía Completa (PDF)</a>
+                <a href="#" class="btn-cta-oscuro">📅 Calendario de Siembra</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-tratamientos">
+        <span class="footer-logo">🌱 Mi Cafetal v2.4</span>
+        <span class="footer-copy">© 2024 Guía de Recomendaciones para la Caficultura Sostenible.</span>
+        <div class="footer-iconos">
+            <span>📱</span>
+            <span>🌐</span>
+            <span>✉️</span>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

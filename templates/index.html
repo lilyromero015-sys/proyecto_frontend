@@ -19,9 +19,9 @@
 
         <nav class="menu">
             <a class="menu-acciones" href="#">Inicio</a>
-            <a class="menu-acciones" href="#">Diagnóstico</a>
-            <a class="menu-acciones" href="#">Prevención</a>
-            <a class="menu-acciones" href="#">Comunidad</a>
+            <a class="menu-acciones" href="plagas">Enfermedades</a>
+            <a class="menu-acciones" href="tratamientos">Tratamientos</a>
+            <a class="menu-acciones" href="foro">Comunidad</a>
         </nav>
 
         <div class="acciones">
@@ -30,10 +30,10 @@
                 <input class="letra-del-buscador" type="text" placeholder="Buscar enfermedades...">
             </div>
 
-            <a class="btn-login" href="/templates/login.html">Iniciar Sesion</a>
+            <a class="btn-login" href="login">Iniciar Sesion</a>
         </div>
     </header>
-     <!-- =========================================
+    <!-- =========================================
          HERO / PARTE PRINCIPAL
     ========================================== -->
 
@@ -149,138 +149,117 @@
          DIAGNOSTICO POR IA
     ========================================== -->
 
-<section class="diagnostico">
+    <section class="diagnostico">
 
-    <!-- ENCABEZADO -->
+        <!-- ENCABEZADO -->
 
-    <div class="diagnostico-header">
+        <div class="diagnostico-header">
 
-        <h2>
-            Diagnóstico por IA en Tiempo Real
-        </h2>
-
-        <p>
-            Compara el estado de tus plantas con nuestro estándar
-            de referencia saludable.
-        </p>
-
-    </div>
-
-
-    <!-- CONTENIDO -->
-
-    <div class="diagnostico-contenido">
-
-
-        <!-- =================================
-             ZONA PARA SUBIR FOTO PARA ESCANEO
-        ================================== -->
-
-        <div class="subir-foto">
-
-            <div class="icono-subir">
-
-                <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-
-                    <path
-                        d="M7 18H17C19.2 18 21 16.2 21 14C21 11.9 19.4 10.2 17.3 10C16.7 7.1 14.2 5 11.2 5C8.1 5 5.5 7.3 5.1 10.3C3.3 10.7 2 12.3 2 14.2C2 16.3 3.7 18 5.8 18H7Z"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                    />
-
-                    <path
-                        d="M12 14V8"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                    />
-
-                    <path
-                        d="M9.5 10.5L12 8L14.5 10.5"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                    />
-
-                </svg>
-
-            </div>
-
-
-            <h3>
-                Subir Foto para Análisis
-            </h3>
-
+            <h2>
+                Diagnóstico por IA en Tiempo Real
+            </h2>
 
             <p>
-                Haz clic para cargar o arrastra la imagen
-                de la hoja afectada de tu cultivo.
+                Compara el estado de tus plantas con nuestro estándar
+                de referencia saludable.
             </p>
 
         </div>
 
 
+        <!-- CONTENIDO -->
 
-        <!-- =================================
-             IMAGEN DE REFERENCIA
+        <div class="diagnostico-contenido">
+
+
+            <!-- =================================
+             ZONA PARA SUBIR FOTO PARA ESCANEO
         ================================== -->
 
-        <div class="referencia">
+            <div class="subir-foto">
 
-            <!--
-                Más adelante puedes colocar
-                aquí la imagen real del cafetal.
-            -->
+                <div class="icono-subir">
 
-            <div class="imagen-referencia">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 
-                <img
-                    src="/static/imagenes/cafe sano.jpg"
-                    alt="Planta de café saludable"
-                >
+                        <path
+                            d="M7 18H17C19.2 18 21 16.2 21 14C21 11.9 19.4 10.2 17.3 10C16.7 7.1 14.2 5 11.2 5C8.1 5 5.5 7.3 5.1 10.3C3.3 10.7 2 12.3 2 14.2C2 16.3 3.7 18 5.8 18H7Z"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 
-            </div>
+                        <path d="M12 14V8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
 
+                        <path d="M9.5 10.5L12 8L14.5 10.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
 
-            <!-- INFORMACIÓN SOBRE LA IMAGEN -->
+                    </svg>
 
-            <div class="referencia-info">
-
-                <span class="referencia-etiqueta">
-
-                    <span class="circulo-verde">
-                        ✓
-                    </span>
-
-                    REFERENCIA: PLANTA SANA
-
-                </span>
+                </div>
 
 
                 <h3>
-                    Variedad Caturra - Estado Óptimo
+                    Subir Foto para Análisis
                 </h3>
 
 
                 <p>
-                    Observa el color verde profundo y la ausencia
-                    de manchas amarillas o marrones.
+                    Haz clic para cargar o arrastra la imagen
+                    de la hoja afectada de tu cultivo.
                 </p>
+
+            </div>
+
+
+
+            <!-- =================================
+             IMAGEN DE REFERENCIA
+        ================================== -->
+
+            <div class="referencia">
+
+                <!--
+                Más adelante puedes colocar
+                aquí la imagen real del cafetal.
+            -->
+
+                <div class="imagen-referencia">
+
+                    <img src="/static/imagenes/cafe sano.jpg" alt="Planta de café saludable">
+
+                </div>
+
+
+                <!-- INFORMACIÓN SOBRE LA IMAGEN -->
+
+                <div class="referencia-info">
+
+                    <span class="referencia-etiqueta">
+
+                        <span class="circulo-verde">
+                            ✓
+                        </span>
+
+                        REFERENCIA: PLANTA SANA
+
+                    </span>
+
+
+                    <h3>
+                        Variedad Caturra - Estado Óptimo
+                    </h3>
+
+
+                    <p>
+                        Observa el color verde profundo y la ausencia
+                        de manchas amarillas o marrones.
+                    </p>
+
+                </div>
 
             </div>
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
     <!-- =========================================
          PREVENCIÓN Y CUIDADOS RÁPIDOS
@@ -340,26 +319,13 @@
 
                     <!-- ICONO SVG DE AGUA -->
 
-                    <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 
-                        <path
-                            d="M12 2C12 2 5 9.2 5 14.2C5 18.5 8.1 21 12 21C15.9 21 19 18.5 19 14.2C19 9.2 12 2 12 2Z"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        />
+                        <path d="M12 2C12 2 5 9.2 5 14.2C5 18.5 8.1 21 12 21C15.9 21 19 18.5 19 14.2C19 9.2 12 2 12 2Z"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 
-                        <path
-                            d="M9 15.5C9 17.2 10.3 18.5 12 18.5"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                        />
+                        <path d="M9 15.5C9 17.2 10.3 18.5 12 18.5" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
 
                     </svg>
 
@@ -391,7 +357,7 @@
                 </a>
 
             </article>
-                        <!-- =================================
+            <!-- =================================
                  TARJETA 2
             ================================== -->
 
@@ -402,69 +368,27 @@
 
                     <!-- ICONO SVG DE INSECTO -->
 
-                    <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 
-                        <rect
-                            x="7"
-                            y="6"
-                            width="10"
-                            height="13"
-                            rx="5"
-                            stroke="currentColor"
-                            stroke-width="2"
-                        />
+                        <rect x="7" y="6" width="10" height="13" rx="5" stroke="currentColor" stroke-width="2" />
 
 
-                        <path
-                            d="M9 10H15"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                        />
+                        <path d="M9 10H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
 
 
-                        <path
-                            d="M9 14H15"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                        />
+                        <path d="M9 14H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
 
 
-                        <path
-                            d="M12 3V6"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                        />
+                        <path d="M12 3V6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
 
 
-                        <path
-                            d="M12 19V22"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                        />
+                        <path d="M12 19V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
 
 
-                        <path
-                            d="M7 9H4"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                        />
+                        <path d="M7 9H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
 
 
-                        <path
-                            d="M17 9H20"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                        />
+                        <path d="M17 9H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
 
                     </svg>
 
@@ -496,7 +420,7 @@
                 </a>
 
             </article>
-             <!-- =================================
+            <!-- =================================
                  TARJETA 3
             ================================== -->
 
@@ -507,27 +431,14 @@
 
                     <!-- ICONO SVG DE HOJA -->
 
-                    <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 
-                        <path
-                            d="M20 4C11 4 5 8.5 5 14C5 17.3 7.7 20 11 20C16.5 20 20 13 20 4Z"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        />
+                        <path d="M20 4C11 4 5 8.5 5 14C5 17.3 7.7 20 11 20C16.5 20 20 13 20 4Z" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 
 
-                        <path
-                            d="M4 20C7 16 10.5 13 16 10"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                        />
+                        <path d="M4 20C7 16 10.5 13 16 10" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
 
                     </svg>
 

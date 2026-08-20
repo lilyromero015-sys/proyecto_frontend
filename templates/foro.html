@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/foro.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">🌱 <span>Comunidad Café</span></div>
+        <nav class="nav-links">
+            <a href="/">inicio</a>
+            <a href="/login">iniciar sesión</a>
+            <a href="/tratamientos">tratamientos</a>
+            <a href="/foro">foro</a>
+        </nav>
+        <div class="nav-right">
+            <input type="text" class="search-input" placeholder="Buscar hilos...">
+            <span class="icon avatar">👤</span>
+        </div>
+    </header>
+
+    <!-- CONTENIDO -->
+    <main class="contenido">
+
+        <section class="encabezado-foro">
+            <div>
+                <h1>Comunidad y Soporte Técnico</h1>
+                <p>Conéctate con expertos agrónomos y otros caficultores para optimizar la salud de tus cultivos y
+                    combatir plagas de manera sostenible.</p>
+            </div>
+            <button class="btn-nuevo-hilo">+ Nuevo Hilo</button>
+        </section>
+
+        <!-- PESTAÑAS -->
+        <nav class="tabs-foro">
+            <button class="tab activo">Foro de Salud</button>
+            <button class="tab">Contacto Técnico</button>
+            <button class="tab">Centros Cercanos</button>
+        </nav>
+
+        <h2 class="titulo-hilos">Hilos Recientes: Salud del Café</h2>
+
+        <!-- LISTA DE HILOS -->
+        <section class="grid-hilos">
+
+            <article class="hilo">
+                <span class="etiqueta etiqueta-plagas">PLAGAS</span>
+                <span class="tiempo">Hace 2 horas</span>
+                <h3>Control biológico de la Broca</h3>
+                <p>¿Alguien ha probado el uso de Beauveria bassiana en altitudes superiores a los 1500msnm? Mis...</p>
+                <div class="hilo-footer">
+                    <span>💬 24</span>
+                    <span>👁 412</span>
+                </div>
+            </article>
+
+            <article class="hilo">
+                <span class="etiqueta etiqueta-nutricion">NUTRICIÓN</span>
+                <span class="tiempo">Hace 5 horas</span>
+                <h3>Deficiencia de Zinc en cafetales jóvenes</h3>
+                <p>Estamos observando entrenudos cortos y hojas pequeñas en el lote nuevo. Adjunto fotos para...</p>
+                <div class="hilo-footer">
+                    <span>💬 18</span>
+                    <span>👁 285</span>
+                </div>
+            </article>
+
+            <article class="hilo">
+                <span class="etiqueta etiqueta-roya">ROYA</span>
+                <span class="tiempo">Ayer</span>
+                <h3>Variedades resistentes en 2024</h3>
+                <p>Comparativa de productividad entre variedades Castillo y Tabi frente a los nuevos brotes de roya
+                    detectados...</p>
+                <div class="hilo-footer">
+                    <span>💬 56</span>
+                    <span>👁 1.2k</span>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+
+
+</body>
+
+</html>

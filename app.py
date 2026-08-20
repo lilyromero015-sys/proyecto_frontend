@@ -13,7 +13,13 @@ def login():
 def plagas():
     return render_template('plagas.html')
 
+@app.route('/foro')
+def foro():
+    return render_template('foro.html')
 
+@app.route('/tratamientos')
+def tratamientos():
+    return render_template('tratamientos.html')
 
 
 
