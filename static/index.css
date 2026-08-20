@@ -83,3 +83,931 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+/* =========================================
+   HERO
+========================================= */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 55px 7.5%;
+    background: #f5f7f6;
+}
+
+
+/* =========================================
+   HERO - SECCIÓN PRINCIPAL
+========================================= */
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 55px 7.5%;
+    background: #f5f7f6;
+}
+
+/* =========================================
+   PARTE IZQUIERDA
+========================================= */
+.contenido-principal {
+    flex: 1;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Contenedor del texto */
+.caja-hija {
+    width: 100%;
+}
+
+/* =========================================
+   ETIQUETA VERDE
+========================================= */
+
+.etiqueta-principal {
+    display: inline-block;
+    padding: 5px 14px;
+    margin-bottom: 25px;
+    background: #d7f7df;
+    color: #08c83a;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* =========================================
+   TÍTULO PRINCIPAL
+========================================= */
+
+.caja-hija h1 {
+    margin: 0;
+    color: #081328;
+    font-size: 56px;
+    line-height: 1.02;
+    letter-spacing: -2.5px;
+    font-weight: 900;
+}
+
+/* Parte verde del título */
+.caja-hija h1 span {
+    color: #08c83a;
+}
+
+/* =========================================
+   DESCRIPCIÓN
+========================================= */
+
+.descripcion-principal {
+    max-width: 540px;
+    margin-top: 28px;
+    color: #36506f;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.2px;
+}
+
+/* =========================================
+   BOTONES
+======================================== */
+
+.btn-pagina-1 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 25px;
+}
+
+/* Botón diagnóstico */
+
+.btn-1 {
+    height: 58px;
+    padding: 0 32px;
+    border: none;
+    border-radius: 12px;
+    background: #08d63b;
+    color: #06120a;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-1:hover {
+    background: #06bd34;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(8, 200, 58, 0.20);
+}
+
+/* Botón guías */
+
+.btn-2 {
+    height: 58px;
+    padding: 0 30px;
+    border: 1px solid #d9e0e5;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #071329;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-2:hover {
+    border-color: #08c83a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(20, 40, 60, 0.08);
+}
+
+
+
+/* =========================================
+   PARTE DERECHA
+========================================= */
+
+.visual {
+    position: relative;
+    flex: 1;
+    min-height: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =========================================
+   IMAGEN / ESPACIO DE LA IMAGEN
+========================================= */
+.imagen-cultivo {
+    width: 100%;
+    max-width: 550px;
+    height: 540px;
+    border-radius: 20px;
+    background: #203b20;
+    border: 8px solid #ffffff;
+    box-shadow:
+        0 20px 35px rgba(20, 40, 20, 0.15);
+    overflow: hidden;
+}
+
+/* =========================================
+   TARJETA DE PRECISIÓN
+========================================= */
+
+.tarjeta {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 240px;
+    min-height: 150px;
+    padding: 24px;
+    display: flex;
+    gap: 14px;
+    background: #ffffff;
+    border: 1px solid #d9f0df;
+    border-radius: 16px;
+    box-shadow:
+        0 15px 30px rgba(20, 40, 60, 0.15);
+    z-index: 5;
+}
+
+/* =========================================
+   ICONO DE LA TARJETA
+========================================= */
+
+.icono-tarjeta {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: #d4f7dd;
+    color: #08c83a;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/* =========================================
+   INFORMACIÓN DE LA TARJETA
+========================================= */
+
+.info-tarjeta {
+    flex: 1;
+}
+
+.info-tarjeta h3 {
+    margin-bottom: 8px;
+    color: #071329;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.info-tarjeta p {
+    color: #607086;
+    font-size: 12px;
+    line-height: 1.45;
+}
+
+/* =========================================
+   RESPONSIVE - TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+    .hero {
+        gap: 40px;
+        padding: 50px 5%;
+    }
+    .caja-hija h1 {
+        font-size: 48px;
+    }
+    .visual {
+        min-height: 480px;
+    }
+
+    .imagen-cultivo {
+        height: 480px;
+    }
+}
+
+/* =========================================
+   RESPONSIVE - CELULAR
+========================================= */
+
+@media (max-width: 800px) {
+    .hero {
+        flex-direction: column;
+        padding: 50px 25px;
+        gap: 50px;
+    }
+
+    .contenido-principal {
+        max-width: 100%;
+    }
+    .caja-hija h1 {
+        font-size: 44px;
+        letter-spacing: -1.5px;
+    }
+
+    .descripcion-principal {
+        font-size: 16px;
+    }
+
+    .visual {
+        width: 100%;
+        min-height: 450px;
+    }
+
+    .imagen-cultivo {
+        width: 100%;
+        height: 450px;
+    }
+
+    .tarjeta {
+        left: 20px;
+        bottom: 0;
+    }
+}
+
+/* =========================================
+   CELULARES PEQUEÑOS
+========================================= */
+
+@media (max-width: 500px) {
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .caja-hija h1 {
+        font-size: 38px;
+        line-height: 1.05;
+    }
+
+    .btn-pagina-1 {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-1,
+    .btn-2 {
+        width: 100%;
+    }
+
+    .visual {
+        min-height: 390px;
+    }
+
+    .imagen-cultivo {
+        height: 390px;
+    }
+
+    .tarjeta {
+        width: 220px;
+        padding: 18px;
+    }
+}
+/* =========================================
+   DIAGNÓSTICO POR IA
+========================================= */
+
+.diagnostico {
+    width: 100%;
+
+    padding: 75px 7.5% 80px;
+
+    background: #ffffff;
+}
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.diagnostico-header {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+
+.diagnostico-header h2 {
+    margin-bottom: 14px;
+
+    color: #071329;
+
+    font-size: 34px;
+
+    font-weight: 800;
+
+    letter-spacing: -0.7px;
+}
+
+
+.diagnostico-header p {
+    color: #36506f;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   CONTENIDO
+========================================= */
+
+.diagnostico-contenido {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 34px;
+
+    max-width: 1150px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   ZONA SUBIR FOTO
+========================================= */
+
+.subir-foto {
+    min-height: 400px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 40px;
+
+    background: #f3fbf5;
+
+    border: 4px dashed #a9ebba;
+
+    border-radius: 24px;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+
+.subir-foto:hover {
+    background: #edf9f0;
+
+    border-color: #08c83a;
+}
+
+
+/* =========================================
+   ICONO SUBIR
+========================================= */
+
+.icono-subir {
+    width: 68px;
+
+    height: 68px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+
+    background: #08d63b;
+
+    color: #06120a;
+
+    box-shadow:
+        0 8px 18px rgba(8, 200, 58, 0.20);
+}
+
+
+.icono-subir svg {
+    width: 32px;
+
+    height: 32px;
+}
+
+
+/* =========================================
+   TEXTO SUBIR FOTO
+========================================= */
+
+.subir-foto h3 {
+    margin-bottom: 10px;
+
+    color: #071329;
+
+    font-size: 19px;
+
+    font-weight: 800;
+}
+
+
+.subir-foto p {
+    max-width: 330px;
+
+    color: #607086;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   TARJETA DE REFERENCIA
+========================================= */
+
+.referencia {
+    position: relative;
+
+    min-height: 400px;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    background: #243c23;
+
+    box-shadow:
+        0 10px 25px rgba(20, 40, 20, 0.12);
+}
+
+
+/* =========================================
+   IMAGEN
+========================================= */
+
+.imagen-referencia {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+}
+
+
+.imagen-referencia img {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+
+/* Oscurecer la parte inferior */
+
+.referencia::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    height: 45%;
+
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(0, 0, 0, 0.82)
+    );
+
+    z-index: 1;
+}
+
+
+/* =========================================
+   INFORMACIÓN DE REFERENCIA
+========================================= */
+
+.referencia-info {
+    position: absolute;
+
+    left: 24px;
+
+    right: 24px;
+
+    bottom: 24px;
+
+    z-index: 2;
+
+    color: #ffffff;
+}
+
+
+.referencia-etiqueta {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 10px;
+
+    color: #00ed4a;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.8px;
+}
+
+
+.circulo-verde {
+    width: 13px;
+
+    height: 13px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid #00ed4a;
+
+    border-radius: 50%;
+
+    font-size: 8px;
+}
+
+
+.referencia-info h3 {
+    margin-bottom: 6px;
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    font-weight: 800;
+}
+
+
+.referencia-info p {
+    max-width: 480px;
+
+    color: #f1f1f1;
+
+    font-size: 14px;
+
+    line-height: 1.45;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .diagnostico {
+        padding: 60px 5%;
+    }
+
+
+    .diagnostico-contenido {
+        grid-template-columns: 1fr;
+    }
+
+
+    .subir-foto,
+    .referencia {
+        min-height: 380px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .diagnostico {
+        padding: 50px 20px;
+    }
+
+
+    .diagnostico-header h2 {
+        font-size: 27px;
+    }
+
+
+    .diagnostico-header p {
+        font-size: 14px;
+    }
+
+
+    .subir-foto {
+        min-height: 340px;
+
+        padding: 25px;
+    }
+
+
+    .referencia {
+        min-height: 340px;
+    }
+
+
+    .referencia-info {
+        left: 18px;
+
+        right: 18px;
+
+        bottom: 18px;
+    }
+
+}
+
+/* =========================================
+   PREVENCIÓN Y CUIDADOS RÁPIDOS
+========================================= */
+
+.consejos {
+    width: 100%;
+    padding: 70px 7.5%;
+    background: #f7f9f8;
+}
+
+
+/* =========================================
+   ENCABEZADO DE CONSEJOS
+========================================= */
+
+.consejos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 48px;
+}
+
+
+/* Título */
+
+.consejos-header h2 {
+    margin-bottom: 14px;
+    color: #071b3a;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+/* Descripción */
+.consejos-header p {
+    max-width: 680px;
+    color: #36506f;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* =========================================
+   ENLACE "VER TODOS"
+========================================= */
+
+.ver-todos {
+    margin-top: 10px;
+    color: #00c83c;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: 0.2s ease;
+}
+
+.ver-todos span {
+    margin-left: 6px;
+    font-size: 18px;
+}
+
+.ver-todos:hover {
+    color: #009f30;
+    transform: translateX(3px);
+}
+
+/* =========================================
+   GRID DE TARJETAS
+========================================= */
+
+.consejos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+/* =========================================
+   TARJETAS
+========================================= */
+
+.consejo-card {
+    min-height: 320px;
+    padding: 32px;
+    background: #ffffff;
+    border: 1px solid #edf0f2;
+    border-radius: 22px;
+    box-shadow: 0 4px 12px rgba(20, 40, 60, 0.04);
+    display: flex;
+    flex-direction: column;
+    transition: 0.25s ease;
+}
+
+/* Efecto al pasar el mouse */
+
+.consejo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(20, 40, 60, 0.10);
+}
+
+/* =========================================
+   ICONOS SVG
+========================================= */
+
+.icono {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    margin-bottom: 27px;
+}
+
+/* Tamaño de los SVG */
+
+.icono svg {
+    width: 27px;
+    height: 27px;
+}
+
+/* Icono azul */
+
+.icono-azul {
+    background: #dce9ff;
+    color: #2874ff;
+}
+
+/* Icono naranja */
+
+.icono-naranja {
+    background: #ffecd2;
+    color: #ff6b00;
+}
+
+/* Icono verde */
+
+.icono-verde {
+    background: #d5f7df;
+    color: #16c94b;
+}
+
+/* =========================================
+   TEXTO DE LAS TARJETAS
+========================================= */
+
+.consejo-card h3 {
+    margin-bottom: 14px;
+    color: #071b3a;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+
+.consejo-card p {
+    color: #36506f;
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+
+/* =========================================
+   ENLACES DE LAS TARJETAS
+========================================= */
+
+.card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: auto;
+    padding-top: 25px;
+    color: #00c83c;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.2s ease;
+}
+
+.card-link span {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.card-link:hover {
+    color: #009f30;
+    transform: translateX(3px);
+}
+
+/* =========================================
+   RESPONSIVE - TABLETS
+========================================= */
+
+@media (max-width: 900px) {
+    .consejos {
+        padding: 55px 5%;
+    }
+
+    .consejos-header {
+        flex-direction: column;
+        margin-bottom: 35px;
+    }
+    .consejos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================
+   RESPONSIVE - CELULARES
+========================================= */
+@media (max-width: 500px) {
+    .consejos {
+        padding: 45px 20px;
+    }
+    .consejos-header h2 {
+        font-size: 25px;
+    }
+    .consejos-header p {
+        font-size: 14px;
+    }
+    .consejo-card {
+        padding: 25px;
+    }
+}
