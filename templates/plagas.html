@@ -18,7 +18,8 @@
             <a href="/">Inicio</a>
             <a href="#">Enfermedades</a>
             <a href="tratamientos">Tratamientos</a>
-            <a href="login">login</a>
+            <a href="login">Iniciar seccion</a>
+            <a href="foro">Comunidad</a>
         </nav>
         <div class="nav-right">
             <input type="text" class="search-input" placeholder="Buscar...">
@@ -37,7 +38,10 @@
 
         <!-- BUSCADOR Y FILTROS -->
         <section class="buscador-filtros">
-            <input type="text" class="buscador" placeholder="🔍 Buscar por nombre científico o común...">
+            <input type="text" id="campo-busqueda" class="buscador"
+                placeholder="🔍 Buscar por nombre científico o común...">
+            <button id="btn-buscar" class="btn-detalles">Buscar</button>
+            <p id="mensaje-busqueda" role="alert" style="color:#b00020; margin:8px 0;"></p>
             <div class="filtros">
                 <button class="filtro activo">Todas las categorías ▾</button>
                 <button class="filtro">🐛 Insectos</button>
@@ -48,7 +52,8 @@
         </section>
 
         <!-- GRID DE TARJETAS -->
-        <section class="grid-plagas">
+        <section class="grid-plagas" id="grid-plagas">
+
 
             <article class="tarjeta">
                 <div class="tarjeta-img">
@@ -171,8 +176,7 @@
         </div>
     </footer>
 
-    <script src="{{ url_for('static', filename='js/funciones.js') }}"></script>
-
+    <script src="{{ url_for('static', filename='buscador.js') }}"></script>
 
 
 

@@ -4,54 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartCafé</title>
-    <link rel="stylesheet" href="/static/login.css">
+    <title>SmartCafe - Crear cuenta o iniciar sesión</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
 </head>
 
 <body>
-    <!-- NAVBAR -->
     <header class="navbar">
-        <div class="logo">🌱 <span>Guía de Caficultura</span></div>
+        <div class="logo">🌱 <span>SmartCafe</span></div>
         <nav class="nav-links">
-            <a href="/">inicio</a>
-            <a href="plagas">enfermedades</a>
-            <a href="tratamientos">prevencion</a>
-            <a href="foro">foro</a>
+            <a href="/">Inicio</a>
+            <a href="/plagas">Enfermedades</a>
+            <a href="/tratamientos">Tratamientos</a>
+            <a href="/acceso#entrar">Iniciar sesión</a>
+            <a href="/foro">Comunidad</a>
         </nav>
+    </header>
 
+    <main class="acceso">
+        <section class="acceso-tarjeta">
 
+            <aside class="acceso-lateral">
+                <h1>Bienvenido a SmartCafe</h1>
+                <p>Crea tu cuenta para guardar tus búsquedas y diagnósticos, y para participar en la comunidad de
+                    caficultores.</p>
+            </aside>
 
-
-        <link rel="stylesheet" href="/static/login.css">
-        <div class="contenedor">
-
-            <div class="login">
-
-                <!-- Logo -->
-                <div class="logo">
-                    <span class="kfe">◯</span> SmartCafé
+            <div class="acceso-contenido">
+                <div class="pestanas">
+                    <button type="button" id="pestana-registro" class="pestana activa">Crear cuenta</button>
+                    <button type="button" id="pestana-login" class="pestana">Iniciar sesión</button>
                 </div>
 
-                <h1>Hola caficultor</h1>
-                <p class="subtitulo">Cuéntanos sobre ti</p>
+                <!-- REGISTRO -->
+                <form id="form-registro" novalidate>
+                    <h2>Crea tu cuenta</h2>
 
-                <!-- Nombre -->
-                <label for="nombre">INGRESA TU NOMBRE</label>
-                <input type="text" id="nombre" placeholder="Juan Valdez">
+                    <label for="reg-nombre">Nombre</label>
+                    <input type="text" id="reg-nombre" autocomplete="name" placeholder="Tu nombre">
 
-                <!-- Teléfono -->
-                <label for="telefono">INGRESA TU NÚMERO DE<br> TELÉFONO</label>
-                <input type="tel" id="telefono" placeholder="3214567890">
+                    <label for="reg-correo">Correo electrónico</label>
+                    <input type="email" id="reg-correo" autocomplete="email" placeholder="ejemplo@correo.com">
 
-                <!-- Botón -->
-                <button onclick="continuar()">continuar →</button>
+                    <label for="reg-clave">Contraseña</label>
+                    <input type="password" id="reg-clave" autocomplete="new-password" placeholder="Mínimo 8 caracteres">
 
+                    <label for="reg-clave2">Escribe la contraseña otra vez</label>
+                    <input type="password" id="reg-clave2" autocomplete="new-password"
+                        placeholder="Repite la contraseña">
+
+                    <label class="casilla">
+                        <input type="checkbox" class="ver-clave" data-campos="reg-clave,reg-clave2">
+                        Mostrar contraseña
+                    </label>
+
+                    <label class="casilla">
+                        <input type="checkbox" id="reg-autorizo">
+                        Autorizo el uso de mis datos solo para SmartCafe
+                    </label>
+
+                    <p class="mensaje" id="mensaje-registro" role="alert"></p>
+                    <button type="submit" class="boton-principal">Crear mi cuenta</button>
+
+                    <p class="cambio">
+                        ¿Ya tienes una cuenta?
+                        <button type="button" class="enlace" id="ir-login">Inicia sesión</button>
+                    </p>
+                </form>
+
+                <!-- INICIO DE SESIÓN -->
+                <form id="form-login" hidden novalidate>
+                    <h2>Inicia sesión</h2>
+
+                    <label for="log-correo">Correo electrónico</label>
+                    <input type="email" id="log-correo" autocomplete="email" placeholder="ejemplo@correo.com">
+
+                    <label for="log-clave">Contraseña</label>
+                    <input type="password" id="log-clave" autocomplete="current-password" placeholder="Tu contraseña">
+
+                    <label class="casilla">
+                        <input type="checkbox" class="ver-clave" data-campos="log-clave">
+                        Mostrar contraseña
+                    </label>
+
+                    <p class="mensaje" id="mensaje-login" role="alert"></p>
+                    <button type="submit" class="boton-principal">Entrar</button>
+
+                    <p class="cambio">
+                        ¿Aún no tienes cuenta?
+                        <button type="button" class="enlace" id="ir-registro">Crea una aquí</button>
+                    </p>
+                </form>
             </div>
 
+        </section>
+    </main>
 
-        </div>
-
-
+    <script src="{{ url_for('static', filename='acceso.js') }}"></script>
 </body>
 
 </html>

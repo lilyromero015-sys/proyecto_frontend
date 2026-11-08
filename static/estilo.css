@@ -20,6 +20,9 @@ body {
     background-color: #ffffff;
     padding: 15px 40px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
@@ -285,4 +288,39 @@ body {
     text-decoration: none;
     color: #2e7d32;
     font-weight: 500;
+}
+
+/* Resultados de búsqueda: tarjetas de tamaño normal*/
+.grid-plagas.resultados-busqueda {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 320px));
+    justify-content: start;
+    gap: 24px;
+}
+
+.grid-plagas.resultados-busqueda .tarjeta {
+    width: 100%;
+}
+
+.grid-plagas.resultados-busqueda .tarjeta-img {
+    height: auto;
+}
+
+.grid-plagas.resultados-busqueda .tarjeta-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.etiqueta-tipo {
+    display: inline-block;
+    padding: 2px 10px;
+    margin-bottom: 8px;
+    border-radius: 999px;
+    background: #e3f4e5;
+    color: #1b6b2a;
+    font-size: 0.8rem;
+    font-weight: 600;
 }
